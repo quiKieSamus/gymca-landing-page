@@ -6,11 +6,52 @@ body, html {
     height: 100%;
 }
 
-/* .hero {
-    background-image: url("../img/hero.jpg");
-    height: 70%;
+.navbar {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    position: fixed;
+    z-index: 9999;
     width: 100%;
-} */
+    top: 0;
+}
+
+.navbar a{
+    float: left;
+    color: darkgreen;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: darkred;
+    color: lightgreen;
+}
+
+.nav-right {
+    float: right;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .nav-right {
+        float: none;
+    }
+}
 
 .hero{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
