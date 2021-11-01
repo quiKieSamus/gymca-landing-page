@@ -74,17 +74,63 @@ body, html {
 }
 
 .hero-btn:hover {
+    transition: 0.5s;
     cursor:pointer;
     background-color: darkred;
     color: white;
 }
 
+
 .about {
     margin: 10px auto 10px auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    
 }
+
+.formarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.frm-item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+}
+
+.btn-sub {
+    width: 100px;
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    background-color: lightgray;
+}
+
+.btn-sub:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: darkred;
+    color: white;
+}
+
+/* .name-email {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: red dashed 1px;
+    
+}
+
+.namearea, .emailarea {
+    display: flex;
+    flex-direction: column;
+} */
+
 
 
 @media screen and (max-width: 600px) {
