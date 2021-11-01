@@ -87,7 +87,7 @@ body, html {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .navbar {
         width: 100%;
         text-align: center;
@@ -109,7 +109,7 @@ body, html {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .navbar.responsive a {
       float: none;
       display: block;
