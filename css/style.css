@@ -17,6 +17,10 @@ body, html {
     transition: top 0.3s;
 }
 
+.social-icon {
+    cursor: pointer;
+}
+
 .navbar a{
     float: left;
     color: darkgreen;
@@ -51,7 +55,7 @@ body, html {
 .hero{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
     /*Set a specific height*/
-    height: 70%;
+    height: 95%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,6 +75,7 @@ body, html {
     border: none;
     height: 30px;
     border-radius: 10px;
+    background-color: lightgray;
 }
 
 .hero-btn:hover {
@@ -80,19 +85,70 @@ body, html {
     color: white;
 }
 
-
-.about {
-    margin: 10px auto 10px auto;
-    display: flex;
-    flex-direction: row;
-    
+.ab-area {
+    margin: 50px auto;
 }
 
-.formarea {
+.ab-item {
+    margin: 10px auto;
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.ab-pgraphs {
+    max-width: 45ch;
+}
+
+.ab-img {
+    width: 50%;
+}
+
+.services, .formarea {
+    margin: 50px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.servicearea {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    margin: auto 10px;
+    text-align: center;
+    max-width: 30ch;
+}
+
+.service-img {
+    border-radius: 300px;
+    height: 240px;
+    width: 240px;
+}
+.location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+}
+
+.a-location {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+
+.a-location:hover {
+    text-decoration: underline;
+    font-size: 24px;
+    transition: 0.5s;
 }
 
 .frm-item {
@@ -117,23 +173,20 @@ body, html {
     color: white;
 }
 
-/* .name-email {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border: red dashed 1px;
-    
-}
-
-.namearea, .emailarea {
-    display: flex;
-    flex-direction: column;
-} */
-
-
-
 @media screen and (max-width: 600px) {
+    .ab-img {
+        height: 240px;
+        width: 240px;
+    }
+    
+    .servicearea {
+        justify-content: center;
+    }
+
+    .service-item {
+        margin: 10px auto;
+    }
+    
     .navbar {
         width: 100%;
         text-align: center;
