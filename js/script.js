@@ -1,3 +1,5 @@
+//responsive navbar
+
 const myFunction = () => {
     let navbar = document.getElementById("navbarid");
     if (navbar.className === "navbar") {
@@ -6,3 +8,17 @@ const myFunction = () => {
       navbar.className = "navbar";
     }
   }
+
+//hiding navbar
+
+let prevScrollpos = window.scrollY;
+
+window.onscroll = () => {
+  let currentScrollpos = window.scrollY;
+  if (prevScrollpos > currentScrollpos) {
+    document.getElementById("navbarid").style.top = "0";
+  } else {
+    document.getElementById("navbarid").style.top = "-60px";
+  }
+  prevScrollpos = currentScrollpos;
+}

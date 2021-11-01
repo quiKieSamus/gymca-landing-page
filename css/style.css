@@ -9,11 +9,12 @@ body, html {
 .navbar {
     overflow: hidden;
     background-color: #f1f1f1;
-    padding: 20px 10px;
+    padding: 5px 10px;
     position: fixed;
     z-index: 9999;
     width: 100%;
     top: 0;
+    transition: top 0.3s;
 }
 
 .navbar a{
@@ -77,6 +78,14 @@ body, html {
     background-color: darkred;
     color: white;
 }
+
+.about {
+    margin: 10px auto 10px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 
 @media screen and (max-width: 500px) {
     .navbar {
