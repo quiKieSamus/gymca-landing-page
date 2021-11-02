@@ -23,4 +23,6 @@ window.onscroll = () => {
 	prevScrollpos = currentScrollpos;
 }
 
-// hiding/appearing logo
+const imageClick = (url) => {
+	window.open(url, '_blank').focus()
+}
