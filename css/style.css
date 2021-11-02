@@ -245,6 +245,10 @@ footer {
     .nav-right {
         float: none;
     }
+
+    .contact-type-item {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
