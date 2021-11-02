@@ -6,6 +6,16 @@ body, html {
     height: 100%;
 }
 
+hr {
+    width: 75%;
+}
+
+footer {
+    background-color: darkred;
+    color: white;
+    width: 100%;
+}
+
 .navbar {
     overflow: hidden;
     background-color: #f1f1f1;
@@ -62,6 +72,11 @@ body, html {
     position: relative;
 }
 
+.hero-title {
+    font-size: 30px;
+
+}
+
 .hero-text {
     text-align: center;
     position: absolute;
@@ -107,8 +122,32 @@ body, html {
     width: 50%;
 }
 
+.contact {
+    margin-top: 60px;
+}
+
+.contact-types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-type-item {
+    align-self: flex-start;
+}
+
+.contact-type-item1, .contact-type-item2 {
+    display: flex;
+    align-items: center;
+}
+
+.formarea{
+    height: 280px;
+}
+
 .services, .formarea {
-    margin: 50px auto;
+    margin: 50px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,7 +162,7 @@ body, html {
 
 .service-item {
     margin: auto 10px;
-    text-align: center;
+    text-align: justify;
     max-width: 30ch;
 }
 
@@ -132,6 +171,7 @@ body, html {
     height: 240px;
     width: 240px;
 }
+
 .location {
     display: flex;
     flex-direction: column;
@@ -140,7 +180,6 @@ body, html {
 }
 
 .a-location {
-    text-decoration: none;
     color: black;
     font-size: larger;
 }
