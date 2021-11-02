@@ -63,7 +63,7 @@ footer {
 
 
 .hero{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero_test.jpg");
     /*Set a specific height*/
     height: 95%;
     background-position: center;
