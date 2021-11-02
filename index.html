@@ -15,9 +15,8 @@
 
     <nav class="navbar" id="navbarid">
         <img src="img/1d529679-c289-4bf5-a69d-3e00b4f09922.webp" alt="image" height="40px" width="40px">
-        <img src="img/icon_fb.png" class="social-icon" alt="image" height="30px" width="30px">
-        <img src="img/icon_ig.png" class="social-icon" alt="image" height="30px" width="30px">
-        <img src="img/icon_wa.png" class="social-icon" alt="image" height="30px" width="30px">
+        <img src="img/icon_fb.png" class="social-icon" alt="image" height="30px" width="30px" onclick="imageClick(`https://www.facebook.com/confecciones.gymca`)">
+        <img src="img/icon_ig.png" class="social-icon" alt="image" height="30px" width="30px" onclick="imageClick(`https://www.instagram.com/fabricantesgymca`)">
 
         <div class="nav-right">
             <a href="#about" class="nav-item">¿Quiénes Somos?</a>
@@ -31,19 +30,20 @@
     </nav>
     <div class="hero">
         <div class="hero-text">
-            <h1>Somos GYM C.A</h1>
-            <p>Somos calidad</p>
+            <p class="hero-title">La solución para tus necesidades textiles</p>
+            <p>Somos GyM C.A</p>
             <a href="#about"><button class="hero-btn">Conoce sobre nosotros</button></a>
         </div>
     </div>
 
+    <hr>
 
     <div class="about" id="about">
         <div class="ab-area">
             <div class="ab-item">
                 <div class="ab-pgraphs">
-                    <h2>¿Quiénes somos?</h2>
-                    <p>Somos una empresa dedicada a la industria textil con una experiencia de 30 años en el mercado. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corrupti, nemo veniam eum neque reprehenderit vel ipsa distinctio inventore quae, dignissimos alias porro aut ratione similique cumque quos! Molestiae, quidem?
+                    <h2 style="text-align: justify;">¿Quiénes somos?</h2>
+                    <p style="text-align: justify;">Somos una empresa dedicada a la industria textil con una experiencia de 30 años en el mercado. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corrupti, nemo veniam eum neque reprehenderit vel ipsa distinctio inventore quae, dignissimos alias porro aut ratione similique cumque quos! Molestiae, quidem?
                     </p>
                 </div>
                 <div>
@@ -53,8 +53,8 @@
             </div>
             <div class="ab-item">
                 <div class="ab-pgraphs">
-                    <h3>Nuestra misión</h3>
-                    <p>Somos una empresa dedicada a la industria textil con una experiencia de 30 años en el mercado. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corrupti, nemo veniam eum neque reprehenderit vel ipsa distinctio inventore quae, dignissimos alias porro aut ratione similique cumque quos! Molestiae, quidem?</p>
+                    <h3 style="text-align: justify;">Nuestra misión</h3>
+                    <p style="text-align: justify;">Somos una empresa dedicada a la industria textil con una experiencia de 30 años en el mercado. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corrupti, nemo veniam eum neque reprehenderit vel ipsa distinctio inventore quae, dignissimos alias porro aut ratione similique cumque quos! Molestiae, quidem?</p>
                     </div>
                     <div>
                         <img src="img/img_about1.jpg" alt="image" class="ab-img">
@@ -63,8 +63,8 @@
             </div>
             <div class="ab-item">
                 <div class="ab-pgraphs">
-                    <h3>Nuestra visión</h3>
-                    <p>Somos una empresa dedicada a la industria textil con una experiencia de 30 años en el mercado. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corrupti, nemo veniam eum neque reprehenderit vel ipsa distinctio inventore quae, dignissimos alias porro aut ratione similique cumque quos! Molestiae, quidem?</p>
+                    <h3 style="text-align: justify;">Nuestra visión</h3>
+                    <p style="text-align: justify;">Somos una empresa dedicada a la industria textil con una experiencia de 30 años en el mercado. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur corrupti, nemo veniam eum neque reprehenderit vel ipsa distinctio inventore quae, dignissimos alias porro aut ratione similique cumque quos! Molestiae, quidem?</p>
                 </div>
                 <div>
                     <img src="img/img_about1.jpg" alt="image" class="ab-img">
@@ -74,7 +74,7 @@
         </div>
 
     </div>
-
+    <hr>
     <div class="services" id="services">
         <h2>Nuestros servicios</h2>
         <h3>Te ofrecemos los siguientes servicios:</h3>
@@ -103,7 +103,7 @@
             </div>
         </div>
     </div>
-
+    <hr>
     <div class="location" id="location">
         <h2>Ubícanos</h2>
         <div>
@@ -111,30 +111,43 @@
             <a href="https://www.google.com/maps/place/Maracaibo,+Zulia,+Venezuela/@10.6877995,-71.6669261,18z/data=!4m5!3m4!1s0x8e89998e7a5bd625:0xce0904e0ea8de74b!8m2!3d10.642707!4d-71.6125366" target="_blank" class="a-location">Av. 79 Maracaibo 4005, Zulia, Venezuela</a>
         </div>
     </div>
-
+    <hr>
     <div class="contact" id="contact">
-        <div class="formarea">
-            <h2>Déjanos tú mensaje</h2>
-            <form action="">
-                <div class="frm-item">
-                    <label for="name">Nombre</label>
-                    <input type="text" placeholder="Fulanito Perencejo">
+        <div class="contact-types">
+            <div class="formarea">
+                <h2>Déjanos tú mensaje</h2>
+                <form action="">
+                    <div class="frm-item">
+                        <label for="name">Nombre</label>
+                        <input type="text" placeholder="Fulanito Perencejo">
+                    </div>
+    
+                    <div class="frm-item">
+                        <label for="email">Correo</label>
+                        <input type="email" placeholder="juanito123@ejemplo.com">
+                    </div>
+    
+                    <div class="frm-item">
+                        <label for="message">Tú mensaje</label>
+                        <textarea name="message" cols="30" rows="10"></textarea>
+                    </div>
+    
+                    <div class="frm-item">
+                        <input type="submit" value="ENVIAR" class="btn-sub">
+                    </div>
+                </form>
+            </div>
+            <div class="contact-type-item">
+                <p>O contáctanos por estos medios:</p>
+                <div class="contact-type-item1">
+                    <img src="img/icon_wa.png" alt="image" width="50" height="50">
+                    <label style="font-size: larger; margin-left: 5px;">+58 412-1087462</label>
                 </div>
-
-                <div class="frm-item">
-                    <label for="email">Correo</label>
-                    <input type="email" placeholder="juanito123@ejemplo.com">
+                <div class="contact-type-item2">
+                    <img src="img/icon_gm.png" alt="image" width="50" height="50">
+                    <label style="font-size: larger; margin-left: 5px;">confeccionesgymca@gmail.com</label>
                 </div>
-
-                <div class="frm-item">
-                    <label for="message">Tú mensaje</label>
-                    <textarea name="message" cols="30" rows="10"></textarea>
-                </div>
-
-                <div class="frm-item">
-                    <input type="submit" value="ENVIAR" class="btn-sub">
-                </div>
-            </form>
+            </div>
         </div>
     </div>
     <script src="js/script.js"></script>
