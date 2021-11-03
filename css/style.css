@@ -253,6 +253,10 @@ footer {
     .navbar a:not(:last-child) {
         display: none;
     }
+
+    .hero {
+        height: 110%;
+    }
 }
 
 @media screen and (max-width: 600px) {
