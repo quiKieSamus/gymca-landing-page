@@ -249,6 +249,10 @@ footer {
     .contact-type-item {
         text-align: center;
     }
+
+    .navbar a:not(:last-child) {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -257,4 +261,5 @@ footer {
       display: block;
       text-align: center;
     }
+
   }
