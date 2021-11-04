@@ -4,16 +4,28 @@
 
 body, html {
     height: 100%;
+    font-family: 'roboto';
 }
 
 hr {
     width: 75%;
 }
 
+
 footer {
     background-color: darkred;
     color: white;
     width: 100%;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(../fonts/lato/Lato-Thin.ttf);
 }
 
 .navbar {
@@ -49,7 +61,7 @@ footer {
 
 .navbar a:hover {
     background-color: darkred;
-    color: lightgreen;
+    color: white;
 }
 
 .nav-right {
@@ -73,12 +85,13 @@ footer {
 }
 
 .hero-title {
-    font-size: 30px;
+    font-size: 50px;
+    font-family: 'lato';
 
 }
 
 .hero-text {
-    text-align: center;
+    text-align: left;
     position: absolute;
     top:50%;
     left:50%;
@@ -86,9 +99,15 @@ footer {
     color: white/*Set a specific color*/;
 }
 
+.hero-subtext {
+    font-family: 'lato';
+    font-weight: 900;
+}
+
 .hero-btn {
     border: none;
     height: 30px;
+    width: 100px;
     border-radius: 10px;
     background-color: lightgray;
 }
@@ -102,6 +121,9 @@ footer {
 
 .ab-area {
     margin: 50px auto;
+    /* background-color: darkred; */
+    border-radius: 5px;
+    /* color: white; */
 }
 
 .ab-item {
